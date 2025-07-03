@@ -113,11 +113,11 @@ def home():
             return redirect(url_for('login'))
         return render_template('home.html')
 
-@app.route('/non_vegpickles')
+@app.route('/non_veg_pickles')
 def non_vegpickles():
     if not session.get('logged_in'):
         return redirect(url_for('login'))
-    return render_template('non_vegpickles.html', products=products ['non_vegpickles'])
+    return render_template('non_vegpickles.html', products=products ['non_veg_pickles'])
 
 @app.route('/veg_pickles')
 def veg_pickles():
