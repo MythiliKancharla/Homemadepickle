@@ -39,6 +39,20 @@
 </head>
 <body>
 
+     <header class="main-header">
+    <div class="logo">Achaar Garden</div>
+    <nav class="nav-bar">
+      <a href="{{ url_for('veg_pickles') }}">Veg Pickles</a>
+      <a href="{{ url_for('non_vegpickles') }}">Non-Veg Pickles</a>
+      <a href="{{ url_for('snacks') }}">Snacks</a>
+      <a href="{{ url_for('cart') }}">🛒 Cart</a>
+      <a href="{{ url_for('login') }}">Login</a>
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+  </header>
+
+
 <div class="about-container">
     <h1>About Achaar Garden Recipes</h1>
     <p class="tagline">"Where tradition meets taste!"</p>
